@@ -75,8 +75,8 @@
 					</div>
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav navbar-right">
-							<li><a input type="button" href="#"onclick="location.href='http://localhost/practicaRA3/solid/registroUsuario.html'"><span>Registrarse</span></a></li>
-							<li><a  input type="button" href="#" onclick="location.href='http://localhost/practicaRA3/solid/loggin.html'"><span>Iniciar sesion</span></a></li><li><a  input type="button" href="#" onclick="location.href='http://localhost/practicaRA3/solid/logginAdmin.html'"><span>Administrador</span></a></li>
+							<li><a input type="button" href="#"onclick="location.href='registroUsuario.html'"><span>Registrarse</span></a></li>
+							<li><a  input type="button" href="#" onclick="location.href='loggin.html'"><span>Iniciar sesion</span></a></li><li><a  input type="button" href="#" onclick="location.href='http://localhost/practicaRA3/solid/logginAdmin.html'"><span>Administrador</span></a></li>
 						</ul>
 					</div>
 				</nav>
@@ -89,7 +89,7 @@
 				<div class="row">
 	<?php
 	session_start();
-	$mysqli = new mysqli("localhost", "root", "", "pisospalvicente");
+	$mysqli = new mysqli("localhost", "root", "root", "pisospalvicente");
 	$CantidadMostrar = 6;
  	$paginaActual=(int)(!isset($_GET['paginaActual'])) ? 1 : $_GET['paginaActual'];
  	$totalArticulos =$mysqli->query("SELECT * FROM inmueble");
