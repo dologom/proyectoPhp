@@ -1,0 +1,82 @@
+drop database if exists pisosPalVicente;
+create database pisosPalVicente;
+use pisosPalVicente;
+
+    create table administrador(
+        id int unsigned auto_increment not null,
+        alias varchar(25) unique not null,
+        correo varchar(50) unique not null,
+        contrasena varchar (18) not null,
+        nombre varchar(25) not null,
+        apellido1 varchar(25) not null,
+        apellido2 varchar(25) not null,
+        edad int not null,
+        telefono varchar (12) not null,
+        primary key (id)
+        );
+    
+    create table usuario(
+        id int unsigned auto_increment not null,
+        alias varchar(25) unique not null,
+        correo varchar(50) unique not null,
+        contrasena varchar (18) not null,
+        nombre varchar(25) not null,
+        apellido1 varchar(25) not null,
+        apellido2 varchar(25) not null,
+        edad int not null,
+        telefono varchar (12) not null,
+        primary key (id)
+        ); 
+    
+    create table inmueble(
+        id int unsigned auto_increment not null,
+	referencia varchar(15) not null,
+	distancia varchar(40) not null,
+	tipo varchar(15) not null,
+	precio int not null,
+        n_habitaciones int not null,
+        zona varchar(50) not null,
+	imagenPrincipal varchar(150) not null,
+	imagenSecundaria1 varchar(150) not null,
+	imagenSecundaria2 varchar(150) not null,
+	imagenSecundaria3 varchar(150) not null,
+	imagenSecundaria4  varchar(150) not null,
+        primary key (id)
+        );
+    
+   	create table mensaje(
+        id int unsigned auto_increment not null,
+        id_administrador int unsigned,
+        id_usuario int unsigned,
+        leido int unsigned not null,
+	asunto varchar(50) not null,
+        foreign key (id_administrador) references administrador (id),
+        foreign key (id_usuario) references usuario (id),
+        mensaje varchar(800),
+        primary key (id)
+        );
+        
+	create table favoritos(
+	id int unsigned auto_increment not null,
+	id_usuario int unsigned,
+	referencia varchar(15) not null,
+	distancia varchar(40) not null,
+	tipo varchar(15) not null,
+	precio int not null,
+        n_habitaciones int not null,
+        zona varchar(50) not null,
+	imagenPrincipal varchar(150) not null,
+	imagenSecundaria1 varchar(150) not null,
+	imagenSecundaria2 varchar(150) not null,
+	imagenSecundaria3 varchar(150) not null,
+	imagenSecundaria4  varchar(150) not null,
+        primary key (id)
+	);
+
+	create table usuario_piso(
+        id_usuario int unsigned,
+        id_inmueble int unsigned,
+        foreign key (id_usuario) references usuario (id),
+        foreign key (id_inmueble) references inmueble (id),
+        primary key (id_usuario, id_inmueble)
+        );
