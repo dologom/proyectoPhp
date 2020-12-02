@@ -1,0 +1,139 @@
+#imagenPrincipal{
+	height: 400px;
+	width: 600px;
+	border: solid 1px black;
+	margin-left: 20px;
+	text-align: center;
+	margin-bottom: 40px
+}
+#referencia{
+	height: 40px;
+	width: 300px;
+	border: solid 1px black;
+	margin-top: 100px;
+	margin-left:20px;
+	margin-bottom: 20px;
+	z-index: 2;
+	display: block;
+}
+#distanciaCM{
+	height: 40px;
+	width: 300px;
+	border: solid 1px black;
+	margin-top: -60px;
+	margin-left:320px;
+	margin-bottom: 20px;
+	z-index: 1;
+	display: block;
+}
+#descripcionC{
+	height: 40px;
+	width: 300px;
+	border: solid 1px black;
+	margin-top: -60px;
+	margin-left:640px;
+	margin-bottom: 20px;
+	z-index: 2;
+	position: absolute;
+	display: inline-block;
+
+}
+#enviar{
+	margin-left: 500px;
+	margin-top: 10px;
+	margin-right: auto;
+	color: rgba(255, 255, 255, 0.9);
+ 	 background: #3EC483;
+	border-radius: 15px;
+
+}
+#precio{
+	height: 40px;
+	width: 120px;
+	border: solid 1px black;
+	margin-top: -60px;
+	margin-left:950px;
+	margin-bottom: 20px;
+	z-index: 2;
+	position: absolute;
+	display: inline-block;
+
+}
+#nHab{
+	height: 40px;
+	width: 100px;
+	border: solid 1px black;
+	margin-top: -60px;
+	margin-left:1100px;
+	margin-bottom: 20px;
+	z-index: 2;
+	position: absolute;
+	display: inline-block;
+}
+#zona{
+	height: 30px;
+	width: 400px;
+	margin-top: 10px;
+	border: solid 1px black;
+	margin-left:20px;
+	text-align: left;
+
+}
+#descripcionL{
+	height: 450px;
+	width: 1000px;
+	margin-top: 10px;
+	border: solid 1px black;
+	margin-left:100px;
+	text-align: left;
+
+}
+#ImagenSecundaria1{
+	height: 200px;
+	width: 300px;
+	border: solid 1px black;
+	margin-left:640px;
+	margin-bottom: 50px;
+	margin-top: -445px;
+	position: relative;
+	z-index: 5;
+}
+#ImagenSecundaria2{
+	height: 200px;
+	width: 300px;
+	border: solid 1px black;
+	margin-left:640px;
+	margin-bottom: 40px;
+	margin-top: 5px;
+	position: relative;
+	z-index: 5;
+
+}
+#ImagenSecundaria3{
+	height: 200px;
+	width: 300px;
+	border: solid 1px black;
+	margin-left:945px;
+	margin-bottom: 40px;
+	margin-top: -490px;
+	position: absolute;
+	z-index: 10;
+}
+#ImagenSecundaria4{
+	height: 200px;
+	width: 300px;
+	border: solid 1px black;
+	margin-left:945px;
+	margin-bottom: 80px;
+	margin-top: -240px;
+	position: relative;
+	z-index: 5;
+}
+#redimensionador{
+	height: 100%;
+	width: 100%;
+    object-fit: fill;
+}
+b{
+	color: #8f989f;
+}

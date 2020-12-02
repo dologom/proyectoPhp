@@ -1,0 +1,56 @@
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto; 
+}
+
+.contenedor .articulos {
+	margin-bottom: 20px;
+}
+
+.contenedor .articulos ul {
+	list-style: none;
+}
+
+.contenedor .articulos ul li {
+	/*background: #fff;*/
+	padding:15px 10px;
+	border-bottom: 1px solid #c8c8c8;
+}
+
+.paginacion ul {
+	list-style: none;
+}
+
+.paginacion ul li {
+	display: inline-block;
+	margin-right: 10px; 
+}
+
+.paginacion ul .active a {
+	background: #ce7f08;
+}
+
+.paginacion ul .disabled {
+	background: #c8c8c8;
+	display: inline-block;
+	font-family: "Oswald", Arial, helvetica, sans-serif;
+	padding: 15px 25px;
+	cursor:not-allowed;
+	color:#fff;
+	text-decoration: none;
+}
+
+.paginacion ul li a {
+	display: inline-block;
+	font-family: "Oswald", Arial, helvetica, sans-serif;
+	padding: 15px 25px;
+	background: #424242;
+	color:#fff;
+	text-decoration: none;
+}
+
+.paginacion ul li a:hover {
+	text-decoration: none;
+	background: #3299bb;
+}
